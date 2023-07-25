@@ -1,0 +1,75 @@
+:root {
+  --clr-slatelight: #e2e8f0;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-slatedark: #020617;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--clr-slatedark);
+  color: var(--clr-slatelight);
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border: none;
+}
+
+#popup {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  color: var(--clr-slate600);
+}
+
+input {
+  font-size: 1.4rem;
+  background-color: var(--clr-slate800);
+  border: 1px solid var(--clr-slate400);
+  padding: 0.7rem 1rem;
+  width: 10rem;
+  margin-right: 0.2rem;
+}
+
+.pixel span,
+.rem span {
+  font-size: 1.4rem;
+  color: var(--clr-slate400);
+}
+
+.arrow__button {
+  margin-top: 1.5rem;
+  .fil0 {
+    fill: var(--clr-slate800);
+    fill-rule: nonzero;
+    transition: fill 0.2s;
+  }
+  cursor: pointer;
+}
+
+.arrow__button:hover .fil0 {
+  fill: var(--clr-slate600);
+}
